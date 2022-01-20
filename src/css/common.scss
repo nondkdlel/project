@@ -1,0 +1,103 @@
+/* common.scss */
+$point-color: #d50037;
+header {
+  height: 86px;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header.sub {
+  background: #222;
+}
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+header .logo img {
+  display: block;
+}
+header nav {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+header nav a {
+  font-size: 16px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.3s;
+}
+header nav a.on {
+  color: $point-color;
+}
+header nav a:hover {
+  color: $point-color;
+}
+footer {
+  background: #222;
+  padding: 30px;
+  text-align: center;
+}
+footer .copyright {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  font-weight: 300;
+}
+#Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#Modal .innerWrap {
+  position: absolute;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 460px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px 35px;
+  .modalHead {
+    text-align: right;
+  }
+  .modalHead button i {
+    font-size: 22px;
+    color: #666;
+  }
+  .modalContent {
+    text-align: center;
+    padding: 30px;
+  }
+  .modalContent h1 {
+    font-size: 16px;
+  }
+  .modalContent .inner-txt {
+    padding-top: 10px;
+  }
+  .modalContent h1 p {
+    line-height: 1.8em;
+  }
+  .modalContent h1 .item-nm {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .modalContent h1 .item-price {
+    font-size: 17px;
+  }
+  .modalFoot {
+    text-align: center;
+  }
+  .modalFoot p {
+    font-weight: 500;
+    font-size: 14px;
+    color: $point-color;
+  }
+}

@@ -1,0 +1,267 @@
+/* style.scss */
+
+@import "./common.scss";
+
+.main-visual {
+  background-image: url("./../img/main_visual.jpg");
+  height: 100vh;
+  position: relative;
+  .main-txt {
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+  }
+  .main-txt h1 {
+    color: #000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .main-txt p {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+  }
+  .main-txt p::after {
+    content: ".";
+    display: inline-block;
+    color: $point-color;
+  }
+}
+#main .innerWrap {
+  padding-top: 80px;
+}
+.itemList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px 0;
+  margin-bottom: 100px;
+}
+.itemList .itemBox {
+  flex-basis: 33.3%;
+  padding: 0 30px;
+  margin-bottom: 100px;
+
+  .responBox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 100%;
+  }
+  .responBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+  .nm-Head {
+    padding: 25px 0;
+    font-size: 0;
+    .left-box {
+      display: inline-block;
+      vertical-align: middle;
+      width: 200px;
+    }
+    .left-box h1 {
+      font-size: 25px;
+      padding-bottom: 5px;
+    }
+    .left-box p {
+      font-size: 15px;
+      color: #999;
+      font-weight: 300;
+      padding-bottom: 10px;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(100% - 200px);
+      font-size: 30px;
+      color: #2b2b2b;
+      text-align: right;
+      font-family: "Black Han Sans", sans-serif;
+    }
+  }
+
+  .content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+    height: 120px;
+    word-break: keep-all;
+  }
+  .btn-group {
+    font-size: 0;
+    text-align: center;
+  }
+  .btn-group input[type="button"] {
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: 1px solid $point-color;
+    color: $point-color;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  .btn-group input[type="button"]:hover {
+    background: $point-color;
+    color: #fff;
+  }
+}
+/* detail */
+
+.detail-area {
+  font-size: 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0 200px;
+}
+.detail-area .le-area,
+.detail-area .rg-area {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.detail-area .dt-info {
+  padding-left: 80px;
+  img {
+    width: 100%;
+    display: block;
+  }
+  .info-txt {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
+  }
+}
+.detail-area .dt-info .tb-info {
+  background: #f1f2f3;
+  border-radius: 10px;
+  padding: 50px 30px;
+  margin-bottom: 80px;
+  .tb-box {
+    margin-bottom: 10px;
+  }
+  .tb-box ul {
+    font-size: 0;
+    padding-bottom: 10px;
+  }
+  .tb-box ul li {
+    display: inline-block;
+    width: 50%;
+    font-size: 13px;
+    color: #999;
+  }
+  p {
+    font-size: 13px;
+    color: #333;
+  }
+}
+.detail-area .dt-info .btn-group {
+  text-align: center;
+  margin: 0 auto;
+  .order-btn {
+    margin-right: 15px;
+  }
+  input {
+    font-size: 16px;
+    padding: 14px 0;
+    max-width: 220px;
+    width: 100%;
+    border: 1px solid #000;
+    background: transparent;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  input:hover {
+    background: #000;
+    color: #fff;
+  }
+}
+.detail-area .dt-info .head {
+  padding-bottom: 30px;
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #999;
+    padding-bottom: 15px;
+  }
+  span {
+    display: block;
+    text-align: right;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 32px;
+    color: #2b2b2b;
+  }
+}
+/* Cart */
+.cart {
+  min-height: 100vh;
+}
+.cart .inner-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 80px 0 120px;
+  h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  table th,
+  table td {
+    padding: 16px 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  table th {
+    background: #f8f8f8;
+  }
+  table td {
+    color: #666;
+    font-weight: 300;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+table td button {
+  background: #ddd;
+  width: 24px;
+  height: 24px;
+  line-height: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+table td button i {
+  font-size: 12px;
+  color: #555;
+}
+table td input[type="button"] {
+  font-size: 14px;
+  padding: 5px 12px;
+  border: 1px solid #ddd;
+  color: #666;
+  background: #f1f2f3;
+  border-radius: 4px;
+}
+/* all */
+.depthWrap .itemList {
+  padding-top: 80px;
+}
