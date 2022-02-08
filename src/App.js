@@ -1,20 +1,20 @@
 /* eslint-disable */
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link, Route, Switch } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-
 import All from './component/All';
-import New from './component/New';
+import Cart from './component/Cart';
+import Detail from './component/Detail';
+import Footer from './component/Footer';
 import Hot from './component/Hot';
 import ItemList from './component/ItemList';
-import Detail from './component/Detail';
-import Cart from './component/Cart';
-import Footer from './component/Footer';
-
-import logo from './img/logo.svg';
-
+import New from './component/New';
 import './css/common.scss';
 import './css/style.scss';
+import logo from './img/logo.svg';
+
+
+
 
 
 function App() {
