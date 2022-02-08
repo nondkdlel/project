@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/project">
           <div id="main">
             <div className="main-visual">
               <Header />
@@ -47,23 +47,23 @@ function App() {
             <Footer />
           </div>
         </Route>
-        <Route exact path="/all">
+        <Route exact path="/project/all">
           <All product={product} />
           <Footer />
         </Route>
-        <Route exact path="/new">
+        <Route exact path="/project/new">
           <New product={product} />
           <Footer />
         </Route>
-        <Route exact path="/hot">
+        <Route exact path="/project/hot">
           <Hot product={product} />
           <Footer />
         </Route>
-        <Route exact path="/detail/:id">
+        <Route exact path="/project/detail/:id">
           <Detail product={product} />
           <Footer />
         </Route>
-        <Route exact path="/Cart">
+        <Route exact path="/project/Cart">
           <Cart product={product}/>
           <Footer />
         </Route>
