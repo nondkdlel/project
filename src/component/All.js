@@ -11,6 +11,7 @@ function All() {
     let item = useSelector((item) => item);
     let [product, setProduct] = useState(item);
 
+
     return (
         <div id="All" className="depthWrap" >
             <Header />
